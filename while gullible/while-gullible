@@ -1,0 +1,25 @@
+
+#include <iostream>
+using namespace std;
+
+int num;
+
+int main() {
+    
+    
+    cout << "Please enter any number besides 5: " << endl;
+    cin >> num;
+    
+    while (num > 0) {
+        if (num != 5) {
+            cout << "Please enter any number besides 5: " << endl;
+            cin >> num;
+        }
+        else if (num == 5) {
+            cout << "Hey! you weren't supposed to enter 5!" << endl;
+            break;
+        }
+    }
+    
+    return 0;
+}
