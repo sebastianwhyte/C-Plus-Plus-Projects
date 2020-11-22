@@ -1,0 +1,56 @@
+// --- COLA MACHINE ---
+//
+//  Created by Sebastian Whyte on 10/28/20.
+//
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    // insert code here...
+    
+    int option;
+    double payment;
+    double drinkPrice = 2.75;
+    
+    
+    cout << "==== COLA MACHINE ====" << endl << endl;
+    
+    cout << "I am a beverage vending machine. All drinks cost $2.75. This is the menu: " << endl << endl;
+    
+    << "--- MENU ---" << endl << endl;
+    << "1. Pepsi\n" << "2. Coca-Cola\n" << "3. Sprite\n" << "4. Dr.Pepper\n" << "5. 7-UP" << endl << endl;
+    
+    cout << "Please enter the number of your choice and the amount you will be paying: " << endl;
+    cin >> option;
+    cin >> payment;
+    
+    switch(option) {
+      case 1:
+            cout << "You have selected Pepsi.\n"
+            << "Here is your change: $" << payment - drinkPrice << endl << endl;
+        break;
+      case 2:
+            cout << "You have selected Coca-Cola\n"
+            << "Here is your change: $" << payment - drinkPrice << endl << endl;
+        break;
+      case 3:
+            cout << "You have selected Sprite\n"
+            << "Here is your change: $" << payment - drinkPrice << endl << endl;
+          break;
+      case 4:
+            cout << "You have selected Dr.Pepper\n"
+            << "Here is your change: $" << payment - drinkPrice << endl << endl;
+            break;
+      case 5:
+            cout << "You have selected 7-UP\n"
+            << "Here is your change: $" << payment - drinkPrice << endl << endl;
+            break;
+      default:
+        cout << "That is not a valid choice.\n"
+            << "Here is your refund: $" << payment  << endl << endl;
+    }
+    
+    
+    return 0;
+}
